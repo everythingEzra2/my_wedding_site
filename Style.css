@@ -1,0 +1,173 @@
+/* ----------------- |START| GLOBAL THEME ----------------- */
+div {
+    font-family: 'Raleway', sans-serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#body {
+    background-color: #808080;
+    /*    background-image: url(Images/Pattern.png)*/
+}
+/* -----------------  |END|  GLOBAL THEME ----------------- */
+
+/* ----------------- |START| MENU SECTION ----------------- */
+/* (0) Menu Styling */
+.main-menu {
+    position: relative;
+    max-width: 700px;
+    margin-bottom: 80px;
+}
+
+
+/* (1) Menu photo */
+.menu-photo-section {
+    height: 250px;
+    margin-top: 50px;
+}
+
+#menu-photo-1 {
+    position: absolute;
+    z-index: -300;
+    width: 45%;
+    transform: rotate(-30deg);
+}
+
+#menu-photo-2 {
+    position: absolute;
+    z-index:-600;
+    width: 40%;
+    transform: rotate(30deg);
+    z-index: -300;
+    right: 15%;
+}
+
+.polaroid {
+    border: solid black 1px;
+    background-color: white;
+    padding: 10px 10px 35px 10px;
+}
+
+/* (2) Single Menu Item: */
+.menu-item {
+
+    margin-top: 2px;
+    font-size: 1.5em;
+    color: black;
+    background: #F4E7B9;
+    margin: 8px 8%;
+    padding-bottom: 3px;
+    padding-left: 15%;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.55);
+    cursor:pointer;
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+    
+    transition: all 1s ease;
+    transition: box-shadow 0.1s;
+}
+
+
+.menu-item:hover {
+    background-color: #F0C497;
+}
+
+.menu-item:active {
+    box-shadow: 0px 0px 0px black;
+}
+
+.icon-style {
+    margin: 8px;
+}
+/* -----------------  |END|  MENU SECTION ----------------- */
+
+/* ----------------- |START| ALTERNATING THEME ------------ */
+.content-wrapper {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index:-1001;
+    padding: 35px;
+    min-height: 520px;
+}
+
+.light-section {
+    background-color: ghostwhite;
+    
+}
+
+.dark-section {
+    background-color: #808080;
+}
+/* -----------------  |END|  ALTERNATING THEME ------------ */
+
+/* ----------------- |START| CONTENT SECTIONS ------------- */
+/* TITLE SECTION */
+#title-section {
+    text-align: center;
+}
+
+#title-image {
+    max-width: 100%;
+    margin-top: 45px;
+}
+/* TITLE SECTION */
+
+/* PHOTOS SECTION */
+.scatteroid-image {
+    width: 100%;
+}
+
+.photostack-img {
+    height: auto !important;
+}
+
+figure {
+    height: auto !important;
+}
+/* PHOTOS SECTION */
+
+/* COUNTDOWN SECTION */
+#countdown-text-style {
+    text-align: center;
+    font-size: 2em;
+}
+
+.countdown-number {
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+}
+
+#countdown-section {
+    min-height: 100px;
+}
+/* COUNTDOWN SECTION */
+/* -----------------  |END|  CONTENT SECTIONS ------------- */
+
+
+/* ----------------- |START| MEDIA QUERIES ---------------- */
+@media (min-width: 992px) {
+    .main-menu {
+    position: fixed;
+    }
+    
+    .menu-photo-section {
+        height: 160px;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* -----------------  |END|  MEDIA QUERIES ---------------- */
