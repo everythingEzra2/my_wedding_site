@@ -254,6 +254,7 @@
                             <!-- labels -->
                             <label class="form-control un-form-control rsvp-info-item" for="full-name">Full Name OR Family :</label>
                             <label class="form-control un-form-control rsvp-info-item" for="rsvp">Attending? :</label>
+                            <label class="form-control un-form-control rsvp-info-item accept-shown" for="count">Count :</label>
                         </div>
                         <div class="col-xs-6">
                             <!-- fields -->
@@ -261,14 +262,16 @@
 
                             <div class="col-xs-6"><input class="form-control rsvp-radio rsvp-info-item un-form-control" name="rsvp" value="1" type="radio">ACCEPTS</input></div>
                             <div class="col-xs-6"><input class="form-control rsvp-radio rsvp-info-item un-form-control" name="rsvp" value="0" type="radio">DECLINES</input></div>
+                            
+                            <input class="accept-shown form-control rsvp-info-item" id="count" type="text">
                         </div>
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 accept-shown">
                             <label class="form-control un-form-control rsvp-info-item" for="rsvp-notes">Anything else you'd like us to know?</label>
                             <textarea id="rsvp-notes" name="rsvp=notes" rows="4" class="form-control rsvp-info-item"></textarea>
                         </div>
-                        <div class="col-xs-12 rsvp-info-item">
+                        <div class="col-xs-12 rsvp-info-item accept-shown">
                             <!-- fields -->
-                            <button id="rsvp-submit" style="padding-right:42px;"><span class="glyphicon glyphicon-send icon-style" aria-hidden="true"></span> SEND</button>
+                            <button id="rsvp-send" style="padding-right:42px;"><span class="glyphicon glyphicon-send icon-style" aria-hidden="true"></span> SEND</button>
                         </div>
                     </div>
                 </div>   
