@@ -187,7 +187,7 @@ figure {
 
 /* RSVP Section */
 .rsvp-section {
-    background-color: aliceblue;
+    background-color: rgba(240,248,255,0.6);
     padding: 40px;20px;
 }
 
@@ -204,6 +204,36 @@ figure {
 }
 /* RSVP Section */
 
+/* REGISTRY SECTION */
+.registry-item {
+    padding: 10px;
+    margin: 8px 8%;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    height: 100px;
+    background-color: #F0F8FF;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    transition: all 1s ease;
+    transition: box-shadow 0.1s;
+}
+
+
+.registry-item:hover {
+    background-color: #6d95b7;
+}
+
+.registry-item:active {
+    box-shadow: 0px 0px 0px black;
+}
+/* REGISTRY SECTION */
+
 /* COUNTDOWN SECTION */
 #countdown-text-style {
     text-align: center;
@@ -218,6 +248,12 @@ figure {
 
 #countdown-section {
     min-height: 100px;
+}
+
+.reg-image {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
 }
 /* COUNTDOWN SECTION */
 /* -----------------  |END|  CONTENT SECTIONS ------------- */

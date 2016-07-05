@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log("ready!");
+    console.log("ready!"); 
     
     $(".scroll-to").click(function() {
         var destination = $(this).attr('destination');
@@ -19,7 +19,7 @@ $(document).ready(function () {
            // Collect rsvp fields
            var rsvp = {
                 name: $("#full-name").val(),
-                //coming: $("#").value,
+                coming: $('input[name="rsvp"]:checked').val(),
                 count: $("#count").val(),
                 notes: $("#rsvp-notes").val()
            }
@@ -30,7 +30,7 @@ $(document).ready(function () {
            console.log(rsvp);
            
             $.ajax( { url: "https://api.mlab.com/api/1/databases/one_summers_day/collections/rsvp?apiKey=ofhZUMH_83xHQ3Eq3Dd9Ji3TRZ1u5Ste",
-                data: JSON.stringify( { "x" : 1 } ),
+                data: JSON.stringify( { "rsvp_entry" : rsvp } ),
                 type: "POST",
                 contentType: "application/json",
                 success: function(data) {
@@ -38,7 +38,15 @@ $(document).ready(function () {
                 } 
             });
        } 
-       
-        
     });
+    
+    function OpenInNewTab(url) {
+        var win = window.open(url, '_blank');
+        win.focus();
+    }   
 });
+
+function OpenInNewTab(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+}  
