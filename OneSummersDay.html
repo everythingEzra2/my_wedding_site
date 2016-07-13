@@ -244,10 +244,10 @@
                 </div>   
             </div>
         </div>
-        <div class="col-xs-12 content-wrapper dark-section">
+        <div class="col-xs-12 content-wrapper" style="background: url('Images/beach2_flipped.jpg') bottom no-repeat; background-size: cover">
             <div class=" content-section">
                 <div id="rsvp" class="col-lg-9 col-lg-offset-3 col-md-8 col-md-offset-4">
-                    <div class="col-lg-offset-3 col-lg-6 col-md-12 rsvp-section" style="text-align:center">
+                    <div class="col-lg-offset-3 col-lg-6 col-md-12 rsvp-section" style="text-align:center; color: black">
                         <h2>RSVP Here</h2>
                         <hr/>
                         <div class="col-xs-6" style="text-align:right">
@@ -278,14 +278,23 @@
                 </div>   
             </div>
         </div>
-        <div class="col-xs-12 content-wrapper light-section">
+        <div class="col-xs-12 content-wrapper light-section" style="min-height: 400px;">
             <div class=" content-section">
-                <div id="registry" class="col-lg-9 col-lg-offset-3 col-md-8 col-md-offset-4">
+                <div id="registry" class="col-lg-9 col-lg-offset-3 col-md-8 col-md-offset-4" style="color: black;">
                     <h2 style="text-align:center">Our Registries!</h2>
                     <hr/>
-                    <div class="col-lg-3 col-xs-6">
+                    <div style="width:100%; text-align:center;"><p style="font-size: 1.7em">We can't wait to begin our adventure together, and we are extremely grateful for any gift or aid you are willing to give!</p></div>
+                    <hr/>
+                    <!--<div class="col-lg-3 col-xs-6">
                         <div class="registry-item" onclick="OpenInNewTab('https://www.amazon.com/wedding/kirsten-bray-jason-summers-nashville-september-2016/registry/3N06B8Z9AMXVA');">
                             <div class="reg-image" style="background: center url('Images/registry/amazon.png') no-repeat; background-size: contain;"></div>
+                        </div>
+                    </div>-->
+                    <div class="col-lg-3 col-xs-6">
+                        <div class="registry-item"> <!--onclick="OpenInNewTab('')">-->
+                            <div class="reg-image" style="background: center url('Images/registry/Honeyfund_Orange.png') no-repeat; background-size: contain; position:relative;">
+                                <div style="bottom: 0px;width: calc(100% + 20px);background-color:grey;text-align:center;position: absolute;margin-left: -10px;margin-right: 10px;"> COMING SOON </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
@@ -303,20 +312,14 @@
                             <div class="reg-image" style="background: center url('Images/registry/anthropology.png') no-repeat; background-size: contain;"></div>
                         </div>
                     </div>
+                    <br/>
                 </div>   
             </div>
         </div>
-        <div class="col-xs-12 content-wrapper dark-section">
-            <div class="content-section">
-                <div class="col-lg-9 col-lg-offset-3 col-md-8 col-md-offset-4">
-                    test
-                </div>   
-            </div>
-        </div>
-        <div id="countdown-section" class="col-xs-12 content-wrapper light-section">
+        <div id="countdown-section" class="col-xs-12 content-wrapper dark-section">
         <div class=" content-section">
             <div id="countdown-sec" class="col-lg-9 col-lg-offset-3 col-md-8 col-md-offset-4">
-                <div id="countdown-text-style">
+                <div id="countdown-text-style" style="color:rgba(248,248,255,0.68);">
                     <div id="countdown"></div>
                     <script type="text/javascript">
                         $('#countdown').countdown('2016/09/15', function(event) {

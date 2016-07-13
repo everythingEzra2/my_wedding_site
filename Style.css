@@ -30,7 +30,7 @@ button:hover {
 }
 
 #body {
-    background-color: #808080;
+    background: url(Images/Textures/white-grain.png);
     /*    background-image: url(Images/Pattern.png)*/
 }
 
@@ -106,7 +106,7 @@ button:hover {
     margin-top: 2px;
     font-size: 1.5em;
     color: black;
-    background: #F4E7B9;
+    background: rgb(115,154,175);
     margin: 8px 8%;
     padding-bottom: 3px;
     padding-left: 15%;
@@ -127,7 +127,7 @@ button:hover {
 
 
 .menu-item:hover {
-    background-color: #F0C497;
+    background-color: #0a5d8a;
 }
 
 .menu-item:active {
@@ -212,6 +212,7 @@ figure {
     cursor: pointer;
     height: 100px;
     background-color: #F0F8FF;
+    border: 1px solid black;
     
     -webkit-touch-callout: none;
     -webkit-user-select: none;

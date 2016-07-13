@@ -34,7 +34,7 @@ $(document).ready(function () {
                 type: "POST",
                 contentType: "application/json",
                 success: function(data) {
-                    alert("Thank you, We've recieved your rsvp! :)");
+                    alert("Thank you, We've recieved your rsvp! :) \n Please remember knoxville is in eastern time zone, you may have to account for a time change");
                 } 
             });
        } 
